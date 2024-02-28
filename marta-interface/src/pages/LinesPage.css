@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     align-items: center;
     height: 55px;
+    background-color: #FFBE98;
 }
 
 .gold {
@@ -11,6 +12,7 @@
     width: 120px;
     border-radius: 10px;
     padding-right: 0;
+    border: 1px solid black;
 }
 
 .red {
@@ -19,6 +21,7 @@
     width: 120px;
     border-radius: 10px;
     padding-right: 0;
+    border: 1px solid black;
 }
 
 .blue {
@@ -27,6 +30,7 @@
     width: 120px;
     border-radius: 10px;
     padding-right: 0;
+    border: 1px solid black;
 }
 
 .green {
@@ -35,6 +39,7 @@
     width: 120px;
     border-radius: 10px;
     padding-right: 0;
+    border: 1px solid black;
 }
 
 .titleDiv {
@@ -44,6 +49,7 @@
     justify-content: center;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
+    background-color: #FEECE2;
 }
 
 .titleP {
@@ -53,13 +59,5 @@
 }
 
 .lineDiv {
-    width: 1170px;
-    background-color: blueviolet;
-    position: absolute;
-    right: 0;
-    top: 128px;
-}
-
-body {
-    overflow-x: hidden;
+    display: flex;
 }

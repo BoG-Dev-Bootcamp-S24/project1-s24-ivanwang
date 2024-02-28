@@ -1,40 +1,38 @@
-.outerDiv {
-    background-color: red;
-    margin: 0;
-    padding: 0;
+.trainOuterDiv {
     display: flex;
+    justify-content: start;
+    width: 81vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #F7DED0;
 }
 
 .letter {
-    background-color: blue;
     height: 70px;
     width: 70px;
     font-size: 50px;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 40px;
+    margin-left: 20px;
 }
 
 .station {
-    background-color: aquamarine;
-    height: 40px;
-    width: 500px;
+    height: 70px;
+    width: 400px;
 }
 
 .stationColor {
-    background-color: azure;
-    width: 500px;
     display: flex;
     justify-content: start;
-    align-self: center;
 }
 
 .wait {
-    background-color: blueviolet;
     height: 70px;
     width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(31, 150, 82);
 }
 
 .stationText {
@@ -48,7 +46,8 @@
 .goldText {
     padding: 0;
     margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 0px;
     background-color: gold;
     width: 60px;
     height: 30px;
@@ -60,8 +59,9 @@
 
 .redText {
     padding: 0;
-    margin: 0;
-    margin-top: 5px;
+    margin-right: 20px;
+    margin-top: 3px;
+    margin-bottom: 0px;
     background-color: red;
     width: 60px;
     height: 30px;
@@ -73,8 +73,9 @@
 
 .blueText {
     padding: 0;
-    margin: 0;
-    margin-top: 5px;
+    margin-right: 20px;
+    margin-top: 3px;
+    margin-bottom: 0px;
     background-color: blue;
     width: 60px;
     height: 30px;
@@ -84,10 +85,11 @@
     color: white;
 }
 
-.greemText {
+.greenText {
     padding: 0;
-    margin: 0;
-    margin-top: 5px;
+    margin-right: 20px;
+    margin-top: 3px;
+    margin-bottom: 0px;
     background-color: green;
     width: 60px;
     height: 30px;
@@ -101,4 +103,5 @@
     padding: 0;
     margin-left: 20px;
     margin-top: 5px;
+    height: 10px;
 }

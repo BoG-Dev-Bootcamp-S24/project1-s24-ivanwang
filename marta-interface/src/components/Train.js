@@ -3,7 +3,7 @@ import './Train.css';
 
 export default function Train({arrival, color}) {
     return (
-        <div className='outerDiv'>
+        <div className='trainOuterDiv'>
             <div className='letter'>
                 {arrival.STATION[0]}
             </div>

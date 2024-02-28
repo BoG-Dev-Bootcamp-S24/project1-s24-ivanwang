@@ -43,10 +43,10 @@ export default function TrainList({loading, arrivalsData, currStation, direction
     }
     
     return (
-        <div>
+        <div className='centDiv'>
           {direction === "E" ? EastWest() : NorthSouth()}
           {loading ? (
-            <div>Loading...</div>
+            <div className='load'>Loading...</div>
           ) : arrivalsData ? (
             arrivalsData.filter((e) => {
               return ((!arriving || scheduled) || e.WAITING_TIME === "Arriving") &&

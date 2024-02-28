@@ -41,7 +41,7 @@ export default function LinesPage({color}) {
     }, [newColor]);
 
     return (
-        <div className='no'>
+        <div>
             <div className="upperButtonDiv">
                 <button className="gold" onClick={() => {setLoading(true); setCurrStation("all"); setNewColor("gold"); navigate("/line/gold")}}>Gold</button>
                 <button className="red" onClick={() => {setLoading(true); setCurrStation("all"); setNewColor("red"); navigate("/line/red")}}>Red</button>
@@ -51,8 +51,8 @@ export default function LinesPage({color}) {
             <div className='titleDiv'>
                 <p className='titleP'>{newColor.toUpperCase()}</p>
             </div>
-            <Navbar loading={loading} stationData={stationData} setCurrStation={setCurrStation}></Navbar>
             <div className='lineDiv'>
+                <Navbar loading={loading} stationData={stationData} setCurrStation={setCurrStation}></Navbar>
                 <TrainList loading={loading} arrivalsData={arrivalsData} currStation={currStation} direction={direction} color={color}></TrainList>
             </div>
         </div>

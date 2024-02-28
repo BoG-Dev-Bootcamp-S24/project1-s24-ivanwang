@@ -14,6 +14,9 @@ export default function FrontPage() {
                 <h1>
                     MARTA
                 </h1>
+                <button className = 'about' onClick={() => navigate('/about')}>
+                    About Me
+                </button>
             </div>
             <div className="bottomDiv"></div>
             <div className="leftDiv">

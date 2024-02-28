@@ -1,0 +1,19 @@
+.navDiv {
+    background-color: black;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navButton {
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    width: 260px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    border-bottom: 1px white solid;
+}
+

@@ -1,0 +1,17 @@
+.filterButtonsDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: auto;
+}
+
+.filterButtons {
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 150px;
+    margin-bottom: 7px;
+    padding: 0;
+}

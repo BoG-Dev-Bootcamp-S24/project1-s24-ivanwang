@@ -1,10 +1,11 @@
 .trainOuterDiv {
     display: flex;
     justify-content: start;
-    width: 81vw;
+    width: 100%;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     background-color: #F7DED0;
+    height: 75px;
 }
 
 .letter {

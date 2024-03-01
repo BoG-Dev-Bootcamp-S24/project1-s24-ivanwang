@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     border-right: 1px solid black;
-    height: 81.6vh;
+    height: 100%;
 }
 
 .navButton {
@@ -17,3 +17,16 @@
     padding-left: 40px;
 }
 
+::-webkit-scrollbar {
+    width: auto;
+}
+
+::-webkit-scrollbar-track {
+    background: #FEECE2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(226, 207, 207);
+    border-radius: 50px;
+    border: 3px solid #FEECE2;
+}

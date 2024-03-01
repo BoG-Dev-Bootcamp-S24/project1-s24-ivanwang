@@ -43,6 +43,7 @@ export default function TrainList({loading, arrivalsData, currStation, direction
     }
     
     return (
+      <div className='container'>
         <div className='centDiv'>
           {direction === "E" ? EastWest() : NorthSouth()}
           {loading ? (
@@ -51,10 +52,10 @@ export default function TrainList({loading, arrivalsData, currStation, direction
             arrivalsData.filter((e) => {
               return ((!arriving || scheduled) || e.WAITING_TIME === "Arriving") &&
               ((!scheduled || arriving) || e.WAITING_TIME !== "Arriving" ) &&
-              ((!east || west) || e.DIRECTION === "E") &&
-              ((!west || east) || e.DIRECTION === "W") &&
               ((!north || south) || e.DIRECTION === "N") &&
-              ((!south || north)|| e.DIRECTION === "S")
+              ((!south || north)|| e.DIRECTION === "S") &&
+              ((!east || west) || e.DIRECTION === "E") &&
+              ((!west || east) || e.DIRECTION === "W")
             }).filter((e) => {
               if (currStation !== "all") {
                 return e.STATION.includes(currStation.toUpperCase())
@@ -68,5 +69,6 @@ export default function TrainList({loading, arrivalsData, currStation, direction
             <div>Error fetching data</div>
           )}
         </div>
-      )
+      </div>
+    )
 }

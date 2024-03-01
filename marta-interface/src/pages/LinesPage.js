@@ -41,7 +41,7 @@ export default function LinesPage({color}) {
     }, [newColor]);
 
     return (
-        <div>
+        <div className='lineOuterDiv'>
             <div className="upperButtonDiv">
                 <button className="gold" onClick={() => {setLoading(true); setCurrStation("all"); setNewColor("gold"); navigate("/line/gold")}}>Gold</button>
                 <button className="red" onClick={() => {setLoading(true); setCurrStation("all"); setNewColor("red"); navigate("/line/red")}}>Red</button>
